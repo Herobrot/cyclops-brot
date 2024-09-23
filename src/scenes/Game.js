@@ -33,17 +33,12 @@ export class Game extends Scene {
         this.player.setOrigin(0.5, 0.5);
         this.player.setScale(0.3); // Adjust scale
 
-        // Add keyboard controls (WASD keys)
-        this.cursors = this.input.keyboard.addKeys({
-            up: Phaser.Input.Keyboard.KeyCodes.W,
-            down: Phaser.Input.Keyboard.KeyCodes.S,
-            left: Phaser.Input.Keyboard.KeyCodes.A,
-            right: Phaser.Input.Keyboard.KeyCodes.D
-        });
-
+        console.log("¿posible error? #1")
+        this.cursors = this.input.keyboard.createCursorKeys();
+        console.log(this.cursors)
+        // Add keyboard controls (WASD keys)        
         // Mouse pointer rotation
-        this.input.on('pointermove', this.handlePlayerRotation, this);
-
+        this.input.on('pointermove', this.handlePlayerRotation, this);        
         // Prevent player from moving outside the world bounds
         this.player.setCollideWorldBounds(true);
     }
