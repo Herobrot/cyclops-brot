@@ -1,9 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #000000;
+    background: rgb(1,0,10);
+    background: -moz-radial-gradient(circle, rgba(1,0,10,1) 15%, rgba(1,5,78,1) 46%);
+    background: -webkit-radial-gradient(circle, rgba(1,0,10,1) 15%, rgba(1,5,78,1) 46%);
+    background: radial-gradient(circle, rgba(1,0,10,1) 15%, rgba(1,5,78,1) 46%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01000a",endColorstr="#01054e",GradientType=1);
+    height: 100vh;
+    overflow: hidden;
 }
+
 
 #app {
     width: 100%;
