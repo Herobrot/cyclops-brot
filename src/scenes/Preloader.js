@@ -33,6 +33,8 @@ export class Preloader extends Scene
         this.load.setPath('assets');
 
         this.load.image('logo', 'logo-Cyclops.png');
+
+        this.load.image('playerPlane', 'Dengekidan_Meteos.png')
     }
 
     create ()
