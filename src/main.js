@@ -4,6 +4,7 @@ import { GameOver } from './scenes/GameOver';
 import { MainMenu } from './scenes/MainMenu';
 import { Preloader } from './scenes/Preloader';
 import { Controls } from './scenes/Controls';
+import { Victory } from './scenes/Victory';
 
 const config = {
     base: '/cyclops-brot/',
@@ -25,7 +26,8 @@ const config = {
         MainMenu,
         Controls,
         Game,
-        GameOver
+        GameOver,
+        Victory
     ]
 };
 

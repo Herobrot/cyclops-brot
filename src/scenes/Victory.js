@@ -1,8 +1,8 @@
 import { Scene } from "phaser";
 
-export class GameOver extends Scene {
+export class Victory extends Scene {
     constructor() {
-        super({ key: 'GameOver' });
+        super({ key: 'Victory' });
     }
 
     create() {
@@ -16,9 +16,9 @@ export class GameOver extends Scene {
             0.5);
 
     
-        this.add.text(this.game.config.width/2, this.game.config.height/3, 'GAME OVER', { 
+        this.add.text(this.game.config.width/2, this.game.config.height/3, 'VICTORY!', { 
             fontSize: '48px', 
-            color: '#ff0000' 
+            color: '#4dff4d' 
         }).setOrigin(0.5);
 
     
